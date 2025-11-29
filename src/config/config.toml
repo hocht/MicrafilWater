@@ -1,10 +1,10 @@
 # Site Configuration
 [site]
-  title            = "Folex" # Shared title for SEO and OpenGraph
-  description      = "A highly customizable creative agency business theme built with Tailwind CSS and Astro Js" # Shared description for SEO and OpenGraph
-  tagline          = "Creative Agency & Personal Portfolio Business Theme"
-  taglineSeparator = "" # default is " - " 
-  baseUrl          = "https://folex-lite-astro.vercel.app/" # Base URL for the site and used in OpenGraph meta tags.
+  title            = "Micrafil Water | Filtros y Purificadores de Agua Profesionales" # Shared title for SEO and OpenGraph
+  description      = "Expertos en sistemas de filtración y purificación de agua. Ofrecemos filtros, purificadores y sistemas de ósmosis inversa para hogar, comercio e industria." # Shared description for SEO and OpenGraph
+  tagline          = "Soluciones profesionales en filtración y purificación de agua"
+  taglineSeparator = " - " # default is " - " 
+  baseUrl          = "https://hocht.github.io/MicrafilWater/" # Base URL for the site and used in OpenGraph meta tags.
   logo             = "/images/logo.svg" # Path to the site's logo
   logoAlternate    = "/images/logo-light.svg" # Path to the site's alternate logo
   logoText         = "" # Text displayed next to the logo
@@ -25,13 +25,16 @@
 # Specific SEO configurations that complement the general site settings.
 # -----------------------------------------------------------------------------------------------------------------------------------
 [seo]
-  author = "Getastrothemes"
+  author = "Micrafil Water"
   keywords = [
-    "free digital agency",
-    "free astro template",
-    "free astro theme",
-    "free astro agency template",
-    "free astro agency theme",
+    "filtros de agua",
+    "purificadores de agua",
+    "sistemas de ósmosis inversa",
+    "filtración industrial",
+    "purificación de agua",
+    "soluciones de filtración",
+    "filtración para uso comercial",
+    "Micrafil Water"
   ]
   robots = "index, follow" # Instructs search engines on how to crawl and index the pages.
 
