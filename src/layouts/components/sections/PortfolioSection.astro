@@ -54,10 +54,11 @@ if (!enable) {
 }
 ---
 
-<section id="projects">
+<section id="projects" class="bg-white text-text-default">
   <div
     class:list={[
-      isDarkAppearance && "bg-theme-darker py-20 md:py-32",
+      "py-20 md:py-28",
+      isDarkAppearance && "bg-theme-darker text-light",
       layout === "slider" && "overflow-hidden",
     ]}>
     <div class="container space-y-14">
@@ -65,7 +66,7 @@ if (!enable) {
         title && (
           <h2
             class:list={[
-              "text-h1-sm md:text-h1 mx-auto max-w-4xl text-center",
+              "text-h1-sm md:text-h1 mx-auto max-w-4xl text-center text-primary",
               isDarkAppearance && "text-light",
             ]}
             set:html={markdownify(title)}

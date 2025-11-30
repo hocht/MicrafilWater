@@ -64,10 +64,10 @@ if (!enable) {
 }
 ---
 
-<section id="services">
+<section id="services" class="bg-body text-text-default">
   <div
     class:list={[
-      "container",
+      "container py-20 md:py-28",
       isHorizontalSection
         ? "grid grid-cols-1 items-start space-y-14 gap-x-10 lg:grid-cols-2 lg:space-y-0"
         : "space-y-14",
@@ -76,7 +76,7 @@ if (!enable) {
       title && (
         <h2
           class:list={[
-            "text-h1-sm md:text-h1 mx-auto max-w-3xl",
+            "text-h1-sm md:text-h1 mx-auto max-w-3xl text-primary",
             appearance === "dark" && "text-light",
             isHorizontalSection ? "lg:sticky lg:top-32" : "text-center",
           ]}
@@ -99,7 +99,7 @@ if (!enable) {
                 ]}
                 id={"accordion-" + id}>
                 <div
-                  class="font-secondary mt-2.5 mb-4 text-2xl font-semibold lg:mb-0 lg:text-sm"
+                  class="font-secondary mt-2.5 mb-4 text-2xl font-semibold text-secondary lg:mb-0 lg:text-sm"
                   set:html={(index <= 9 ? "0" : "") + (index + 1)}
                 />
                 <button
@@ -129,7 +129,7 @@ if (!enable) {
                 <div class="hs-accordion-active:rotate-180 pointer-events-none absolute end-0 top-8 flex transition duration-300">
                   <ReactIcons
                     icon="RxArrowTopRight"
-                    class="text-dark text-xl"
+                    class="text-secondary text-xl"
                   />
                 </div>
               </div>

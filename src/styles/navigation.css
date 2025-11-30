@@ -10,6 +10,10 @@
     @apply bg-transparent;
   }
 
+  &.has-dark-background {
+    @apply bg-primary text-light;
+  }
+
   /* Sticky Animation On Fixed Header */
   &.scroll-down.has-sticky-behavior:not(.has-dark-background),
   &.scroll-up.has-sticky-behavior:not(.has-dark-background) {
@@ -18,7 +22,7 @@
 
   &.scroll-down.has-sticky-behavior.has-dark-background,
   &.scroll-up.has-sticky-behavior.has-dark-background {
-    @apply bg-black/80 backdrop-blur-lg;
+    @apply bg-primary/90 backdrop-blur-lg;
   }
 
   /* Following Code Make Sticky Upwards */

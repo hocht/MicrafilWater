@@ -5,20 +5,21 @@
   --leading-inherit: inherit;
 
   /* Colors */
-  --color-primary: #0d0f01;
-  --color-secondary: #bcd4ff;
-  --color-accent: #e3ff04;
-  --color-accent-blue: #1601ac;
-  --color-body: #fff;
-  --color-body-dark: #070800;
-  --color-border-light: #e5e5e5;
-  --color-border-dark: #292525;
-  --color-theme-dark: #0e1118;
-  --color-theme-darker: #131312;
-  --color-theme-light: #f6f5f3;
-  --color-text-default: #2e2e2e;
-  --color-dark: #0a0c00;
-  --color-light: #f6f5f3;
+  --color-primary: #104070;        /* Color principal para encabezados */
+  --color-secondary: #00a6e8;      /* Color secundario/terciario */
+  --color-accent: #0096d6;         /* Color de acento para botones CTA */
+  --color-accent-blue: #00a6e8;    /* Color azul para enlaces */
+  --color-body: #F5F8FB;           /* Fondo general del sitio */
+  --color-body-dark: #0a1a2e;      /* Fondo oscuro */
+  --color-border-light: #e5e5e5;   /* Borde claro */
+  --color-border-dark: #d1e0f0;    /* Borde oscuro */
+  --color-theme-dark: #104070;     /* Color oscuro del tema */
+  --color-theme-darker: #0a1a2e;   /* Color más oscuro del tema */
+  --color-theme-light: #F0F8FF;    /* Fondo de tarjeta destacada */
+  --color-text-default: #374151;   /* Color de texto principal (gris oscuro) */
+  --color-dark: #1a365d;           /* Color oscuro para texto */
+  --color-light: #ffffff;          /* Color claro para texto sobre fondos oscuros */
+  --color-highlight: #e6f2ff;      /* Color de resaltado */
 
   /* Screen */
   --breakpoint-*: initial;

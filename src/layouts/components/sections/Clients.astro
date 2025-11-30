@@ -36,14 +36,14 @@ if (!enable) {
 }
 ---
 
-<section>
+<section class="bg-white text-text-default">
   <div class="container space-y-8 md:space-y-16">
     {
       title && (
         <div class="mx-auto lg:max-w-3xl">
           <h2
             class:list={[
-              "text-h1-sm md:text-h1 text-center",
+              "text-h1-sm md:text-h1 text-center text-primary",
               isDarkAppearance && "text-light",
             ]}
             set:html={markdownify(title)}
