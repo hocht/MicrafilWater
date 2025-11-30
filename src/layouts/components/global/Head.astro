@@ -7,6 +7,11 @@ import OpenGraph from "../seo/OpenGraph.astro";
 import Font from "../widgets/Font.astro";
 
 const config = parseTomlToJson();
+const baseUrl = config.site?.baseUrl
+  ? new URL(config.site.baseUrl)
+  : Astro.site ?? new URL(import.meta.env.BASE_URL, "http://localhost");
+const base = baseUrl.pathname.replace(/\/$/, "");
+const rawHeadContent = config.head?.content;
 ---
 
 <head>
@@ -38,10 +43,14 @@ const config = parseTomlToJson();
   />
   <meta name="generator" content={Astro.generator} />
   {
-    config.head?.content && (
+    rawHeadContent && (
       // Injecting custom scripts such as Google Analytics, Google Tag Manager, etc. tracking code,
       // which should be placed in <head> tag
-      <Fragment set:html={config.head?.content} />
+      <Fragment
+        set:html={rawHeadContent
+          .replaceAll("{BASE}", base)
+          .replaceAll("{ORIGIN}", baseUrl.origin)}
+      />
     )
   }
   <OpenGraph

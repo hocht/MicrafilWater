@@ -188,6 +188,9 @@ export const getLocaleUrlCTM = (
   providedLang: string | undefined,
   prependValue?: string,
 ): string => {
+  const baseUrlObj = new URL(config.site.baseUrl);
+  const basePath = baseUrlObj.pathname.replace(/\/$/, "");
+  const basePathWithSlash = basePath ? `${basePath}/` : "";
   const language = providedLang || defaultLanguage;
   const languageCodes = languagesJSON.map((language) => language.languageCode);
   const languageDirectories = new Set(
@@ -242,6 +245,16 @@ export const getLocaleUrlCTM = (
     }
   }
 
+  // Remove the configured base path from the URL before further processing
+  if (!isAbsoluteUrl && basePath) {
+    if (updatedUrl === basePath) {
+      updatedUrl = "/";
+    } else if (updatedUrl.startsWith(basePathWithSlash)) {
+      const sliced = updatedUrl.slice(basePathWithSlash.length);
+      updatedUrl = `/${sliced}`;
+    }
+  }
+
   // Remove any existing language directories from the URL
   for (const langDir of languageDirectories) {
     if (updatedUrl.startsWith(`${langDir}/`)) {
@@ -273,7 +286,11 @@ export const getLocaleUrlCTM = (
     const segments = u.split("/");
     const lang = languageCodes.find((item) => segments.includes(item));
 
-    const urlWithoutLang = u.replace(`/${lang}`, "");
+    if (!lang) {
+      return u;
+    }
+
+    const urlWithoutLang = u.replace(new RegExp(`/${lang}(?=/|$)`), "");
 
     // if urlWithoutLang equal to empty string, return '/'
     if (urlWithoutLang === "") return "/";
@@ -315,7 +332,15 @@ export const getLocaleUrlCTM = (
     if (hash) {
       updatedUrl = `${updatedUrl}#${hash}`;
     }
+
+    return updatedUrl;
   }
 
-  return updatedUrl;
+  const normalizedBase = basePath === "" ? "" : basePath;
+  const normalizedPath = updatedUrl === "/" ? "" : updatedUrl.replace(/^\//, "");
+  const combined = `${normalizedBase}/${normalizedPath}`
+    .replace(/\/+/g, "/")
+    .replace(/\/$/, "");
+
+  return trailingSlashChecker(combined || "/");
 };

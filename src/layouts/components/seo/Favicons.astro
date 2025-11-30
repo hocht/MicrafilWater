@@ -1,6 +1,11 @@
 ---
 const config = Astro.props.config;
-let faviconPath = "/images/favicons";
+const baseUrl = config.site?.baseUrl
+  ? new URL(config.site.baseUrl)
+  : Astro.site ?? new URL(import.meta.env.BASE_URL, "http://localhost");
+const base = baseUrl.pathname.replace(/\/$/, "");
+const withBase = (path: string) => `${base}${path}`;
+let faviconPath = withBase("/images/favicons");
 
 const favicons: {
   rel: string;
