@@ -89,9 +89,9 @@
 
   # Global Contact Information
   [settings.contactInfo]
-    address = "27 Division St, New York, <br /> NY 10002, USA"
-    email   = "[folex.agency@mail.com](mailto:folex.agency@mail.com)"
-    phone   = "[+1 800 123 654 987](tel:+1800123654987)"
+    address = "[Terra Business Park, Retorno Universitario 1, Manzana 1er 102 A,<br />La Pradera, 76269 Santiago de Querétaro, Qro.](https://www.google.com/maps?q=20.660506676874835,-100.33211362208975)"
+    email   = "[water@micrafil.com](mailto:water@micrafil.com)"
+    phone   = "[+52 442 187 0410](https://wa.me/524421870410)"
 
   # Header Offcanvas Configuration
   # Update social links in `src/config/social.json`
@@ -110,7 +110,7 @@
 [settings.navigationButton]
   enable = true
   label  = "" # Check src/i18n/en.json and src/i18n/fr.json for changing the navigation button label in different languages or directly add value here if you are not using internationalization feature
-  url    = "/"
+  url    = "https://wa.me/5214423560603"
 
 
 # OpenGraph Metadata

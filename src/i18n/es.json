@@ -12,10 +12,14 @@
     "buttonLabel": "Let’s Talk With Us"
   },
   "navigation": {
-    "buttonLabel": "Get Started"
+    "buttonLabel": "Contáctanos"
+  },
+  "helperButtons": {
+    "whatsapp": "WhatsApp",
+    "call": "Llámanos"
   },
   "footer": {
-    "copyright": "Copyright © {{ year }} by your company / Crafted with [Getastrothemes](https://getastrothemes.com/)",
-    "_comment": "We kindly appreciate it if you retain the theme copyright. Thank you for supporting Getastrothemes!"
+    "copyright": "© {{ year }} Micrafil / Micrafil Water / Diseñado y desarrollado con [Astro](https://astro.build)",
+    "_comment": "Se recomienda conservar el crédito de Astro para mantener contexto."
   }
 }

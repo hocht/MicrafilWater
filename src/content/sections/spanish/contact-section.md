@@ -59,11 +59,11 @@ map:
 # Check config.toml file for form action related settings
 # this is also used in the footer of the personal portfolio homepage
 form:
-  emailSubject: "New form submission from folex website" # Customized email subject (applicable when anyone submit form, form submission may receive by email depend on provider)
+  emailSubject: "Nuevo mensaje desde el sitio Micrafil" # Customized email subject (applicable when anyone submit form, form submission may receive by email depend on provider)
   submitButton:
     # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)
     enable: true
-    label: "SEND MESSAGE"
+    label: "Enviar Mensaje"
     # hoverEffect: "" # Optional: text-flip | creative-fill | magnetic | magnetic-text-flip
     # variant: "" # Optional: fill | outline | text | circle
     # rel: "" # Optional
@@ -74,106 +74,134 @@ form:
   #   Your data is safe with us. We respect your privacy and never share your information. <br /> Read our [Privacy Policy](/privacy-policy/).
   inputs:
     - label: ""
-      placeholder: "Full Name *"
-      name: "Full Name" # This is crucial. Its indicate under which name you want to receive this field data
+      placeholder: "Nombre Completo *"
+      name: "Nombre Completo" # This is crucial. Its indicate under which name you want to receive this field data
       required: true
       halfWidth: true
       defaultValue: ""
     - label: ""
-      placeholder: "Email Address *"
-      name: "Email Address" # This is crucial. Its indicate under which name you want to receive this field data
+      placeholder: "Correo Electrónico *"
+      name: "Correo Electrónico" # This is crucial. Its indicate under which name you want to receive this field data
       required: true
       type: "email"
       halfWidth: true
       defaultValue: ""
     - label: ""
-      placeholder: "Subject *"
-      name: "Subject" # This is crucial. Its indicate under which name you want to receive this field data
-      required: false
+      placeholder: "Teléfono / WhatsApp *"
+      name: "Teléfono"
+      required: true
+      type: "tel"
+      halfWidth: true
+      defaultValue: ""
+    - label: ""
+      placeholder: "Motivo *"
+      name: "Motivo"
+      required: true
       halfWidth: true
       dropdown:
         type: "" # select | search - default is select
         search: # if type is search then it will work
           placeholder: ""
         items:
-          - label: "General Inquiry"
-            value: "General Inquiry"
+          - label: "Hogar (Doméstico)"
+            value: "Hogar (Doméstico)"
             selected: false
-          - label: "Partnership Opportunity"
-            value: "Partnership Opportunity"
+          - label: "Comercial"
+            value: "Comercial"
             selected: false
-          - label: "Investment Opportunity"
-            value: "Investment Opportunity"
+          - label: "Hotelería / Restaurantes"
+            value: "Hotelería / Restaurantes"
+            selected: false
+          - label: "Industrial"
+            value: "Industrial"
             selected: false
     - label: ""
-      placeholder: "Subject With Search *"
-      name: "Subject With Search" # This is crucial. Its indicate under which name you want to receive this field data
+      placeholder: "Motivo específico"
+      name: "Motivo Específico" # This is crucial. Its indicate under which name you want to receive this field data
       required: false
       halfWidth: true
       dropdown:
         type: "search" # select | search - default is select
         search: # if type is search then it will work
-          placeholder: "Subject With Search"
+          placeholder: "Buscar solicitudes"
         items:
-          - label: "General Inquiry"
-            value: "General Inquiry"
+          - label: "Ósmosis Inversa"
+            value: "Ósmosis Inversa"
             selected: false
-          - label: "Partnership Opportunity"
-            value: "Partnership Opportunity"
+          - label: "Ósmosis + UV"
+            value: "Ósmosis + UV"
             selected: false
-          - label: "Career Opportunity"
-            value: "Career Opportunity"
+          - label: "Suavizador de Agua"
+            value: "Suavizador de Agua"
             selected: false
-          - label: "Investment Opportunity"
-            value: "Investment Opportunity"
+          - label: "Sistema Industrial"
+            value: "Sistema Industrial"
             selected: false
-          - label: "Media Inquiry"
-            value: "Media Inquiry"
+          - label: "Sistema para Restaurante / Café"
+            value: "Sistema para Restaurante / Café"
+            selected: false
+          - label: "Desmineralización"
+            value: "Desmineralización"
+            selected: false
+          - label: "Problemas de Incrustaciones"
+            value: "Problemas de Incrustaciones"
+            selected: false
+          - label: "Mantenimiento"
+            value: "Mantenimiento"
+            selected: false
+          - label: "Refacciones"
+            value: "Refacciones"
+            selected: false
+          - label: "Análisis de Agua"
+            value: "Análisis de Agua"
+            selected: false
+          - label: "Proyecto Especial"
+            value: "Proyecto Especial"
             selected: false
     - label: ""
       tag: "textarea"
       defaultValue: ""
       rows: "2" # Only work if tag is textarea
-      placeholder: "How can we help you *"
-      name: "Message" # This is crucial. Its indicate under which name you want to receive this field data
+      placeholder: "¿Cómo podemos ayudarte? *"
+      name: "Mensaje" # This is crucial. Its indicate under which name you want to receive this field data
       required: true
       halfWidth: false
-    - label: "Google Search" # only valid for type="checkbox" & type === "radio"
+    - label: "Búsqueda en Google" # only valid for type="checkbox" & type === "radio"
       checked: false # only valid for type="checkbox" & type === "radio"
-      name: "User Source" # This is crucial. Its indicate under which name you want to receive this field data
+      name: "Origen del contacto" # This is crucial. Its indicate under which name you want to receive this field data
       required: true
-      groupLabel: "How did you hear about us?" # Radio Inputs Label
+      groupLabel: "¿Cómo te enteraste de nosotros?" # Radio Inputs Label
       group: "source" # when you add group then it will omit space between the same group radio input
       type: "radio"
       halfWidth: true
       defaultValue: ""
-    - label: "Social Media" # only valid for type="checkbox" & type === "radio"
-      name: "User Source" # This is crucial. Its indicate under which name you want to receive this field data
+    - label: "Redes Sociales" # only valid for type="checkbox" & type === "radio"
+      name: "Origen del contacto" # This is crucial. Its indicate under which name you want to receive this field data
       required: true
       groupLabel: "" # Radio Inputs Label
       group: "source" # when you add group then it will omit space between the same group radio input
       type: "radio"
       halfWidth: true
       defaultValue: ""
-    # - label: "Referral" # only valid for type="checkbox" & type === "radio"
-    #   name: "User Source" # This is crucial. Its indicate under which name you want to receive this field data
-    #   required: true
-    #   groupLabel: "" # Radio Inputs Label
-    #   group: "source" # when you add group then it will omit space between the same group radio input
-    #   type: "radio"
-    #   halfWidth: true
-    #   defaultValue: ""
-    # - label: "Other" # only valid for type="checkbox" & type === "radio"
-    #   name: "User Source" # This is crucial. Its indicate under which name you want to receive this field data
-    #   required: true
-    #   groupLabel: "" # Radio Inputs Label
-    #   group: "source" # when you add group then it will omit space between the same group radio input
-    #   type: "radio"
-    #   halfWidth: true
-    #   defaultValue: ""
-    - label: "I agree to the terms and conditions and [privacy policy](/)." # only valid for type="checkbox" & type === "radio"
+    - label: "Recomendación"
+      name: "Origen del contacto"
+      required: true
+      groupLabel: ""
+      group: "source"
+      type: "radio"
+      halfWidth: true
+      defaultValue: ""
+    - label: "Ya conozco Micrafil"
+      name: "Origen del contacto"
+      required: true
+      groupLabel: ""
+      group: "source"
+      type: "radio"
+      halfWidth: true
+      defaultValue: ""
+    - label: "Acepto los términos y condiciones y [aviso de privacidad](/)." # only valid for type="checkbox" & type === "radio"
       id: "privacy-policy"
-      name: "Agreed Privacy" # This is crucial. Its indicate under which name you want to receive this field data
+      name: "Aceptación de Términos" # This is crucial. Its indicate under which name you want to receive this field data
       value: "Agreed" # Value that will be submit (applicable for type="checkbox" & type === "radio")
       checked: false # only valid for type="checkbox" & type === "radio"
       required: true
@@ -182,8 +210,8 @@ form:
       defaultValue: ""
     - note: success # info | warning | success | deprecated | hint
       parentClass: "hidden text-sm message success"
-      content: We have received your message! We'll get back to you as soon as possible.
+      content: ¡Hemos recibido tu mensaje! Te contactaremos lo antes posible.
     - note: deprecated # info | warning | success | deprecated | hint
       parentClass: "hidden text-sm message error"
-      content: Something went wrong! please use this mail - [folex-astro-theme@gmail.com](mailto:folex-astro-theme@gmail.com) to submit a ticket!
+      content: Algo salió mal. Escríbenos a [folex-astro-theme@gmail.com](mailto:folex-astro-theme@gmail.com) para recibir ayuda.
 ---

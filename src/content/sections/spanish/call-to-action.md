@@ -1,9 +1,9 @@
 ---
 # For Updating Contact Info Like Email, Phone Number, Address, etc. Please update in `src/config/config.toml` `settings.contactInfo` table
 enable: true # Control the visibility of this section across all pages where it is used
-title: "Let’s Work Together"
+title: "Trabajemos juntos"
 description: |
-  We are digital agency that helps businesses develop immersive and engaging user experiences
+  En Micrafil y Micrafil Water ayudamos a empresas a desarrollar soluciones de filtración y experiencias digitales que impulsan procesos, eficiencia y crecimiento real.
 
 button:
   enable: true

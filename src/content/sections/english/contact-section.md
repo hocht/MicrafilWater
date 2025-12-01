@@ -63,7 +63,7 @@ form:
   submitButton:
     # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)
     enable: true
-    label: "SEND MESSAGE"
+    label: "Send Message"
     # hoverEffect: "" # Optional: text-flip | creative-fill | magnetic | magnetic-text-flip
     # variant: "" # Optional: fill | outline | text | circle
     # rel: "" # Optional
@@ -87,54 +87,82 @@ form:
       halfWidth: true
       defaultValue: ""
     - label: ""
+      placeholder: "Phone / WhatsApp *"
+      name: "Phone"
+      required: true
+      type: "tel"
+      halfWidth: true
+      defaultValue: ""
+    - label: ""
       placeholder: "Subject *"
       name: "Subject" # This is crucial. Its indicate under which name you want to receive this field data
-      required: false
+      required: true
       halfWidth: true
       dropdown:
         type: "" # select | search - default is select
         search: # if type is search then it will work
           placeholder: ""
         items:
-          - label: "General Inquiry"
-            value: "General Inquiry"
+          - label: "Home"
+            value: "Home"
             selected: false
-          - label: "Partnership Opportunity"
-            value: "Partnership Opportunity"
+          - label: "Commercial"
+            value: "Commercial"
             selected: false
-          - label: "Investment Opportunity"
-            value: "Investment Opportunity"
+          - label: "Hospitality / Restaurants"
+            value: "Hospitality / Restaurants"
+            selected: false
+          - label: "Industrial"
+            value: "Industrial"
             selected: false
     - label: ""
-      placeholder: "Subject With Search *"
+      placeholder: "Subject With Search"
       name: "Subject With Search" # This is crucial. Its indicate under which name you want to receive this field data
       required: false
       halfWidth: true
       dropdown:
         type: "search" # select | search - default is select
         search: # if type is search then it will work
-          placeholder: "Subject With Search"
+          placeholder: "Search requests"
         items:
-          - label: "General Inquiry"
-            value: "General Inquiry"
+          - label: "Reverse Osmosis"
+            value: "Reverse Osmosis"
             selected: false
-          - label: "Partnership Opportunity"
-            value: "Partnership Opportunity"
+          - label: "Reverse Osmosis + UV"
+            value: "Reverse Osmosis + UV"
             selected: false
-          - label: "Career Opportunity"
-            value: "Career Opportunity"
+          - label: "Water Softener"
+            value: "Water Softener"
             selected: false
-          - label: "Investment Opportunity"
-            value: "Investment Opportunity"
+          - label: "Industrial System"
+            value: "Industrial System"
             selected: false
-          - label: "Media Inquiry"
-            value: "Media Inquiry"
+          - label: "Restaurant / Café System"
+            value: "Restaurant / Café System"
+            selected: false
+          - label: "Demineralization"
+            value: "Demineralization"
+            selected: false
+          - label: "Scaling Issues"
+            value: "Scaling Issues"
+            selected: false
+          - label: "Maintenance"
+            value: "Maintenance"
+            selected: false
+          - label: "Spare Parts"
+            value: "Spare Parts"
+            selected: false
+          - label: "Water Analysis"
+            value: "Water Analysis"
+            selected: false
+          - label: "Custom Project"
+            value: "Custom Project"
             selected: false
     - label: ""
       tag: "textarea"
       defaultValue: ""
       rows: "2" # Only work if tag is textarea
-      placeholder: "How can we help you *"
+      placeholder: "How can we help you? *"
       name: "Message" # This is crucial. Its indicate under which name you want to receive this field data
       required: true
       halfWidth: false
@@ -152,6 +180,22 @@ form:
       required: true
       groupLabel: "" # Radio Inputs Label
       group: "source" # when you add group then it will omit space between the same group radio input
+      type: "radio"
+      halfWidth: true
+      defaultValue: ""
+    - label: "Referral"
+      name: "User Source"
+      required: true
+      groupLabel: ""
+      group: "source"
+      type: "radio"
+      halfWidth: true
+      defaultValue: ""
+    - label: "Already familiar with Micrafil"
+      name: "User Source"
+      required: true
+      groupLabel: ""
+      group: "source"
       type: "radio"
       halfWidth: true
       defaultValue: ""

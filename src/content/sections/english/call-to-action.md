@@ -3,7 +3,7 @@
 enable: true # Control the visibility of this section across all pages where it is used
 title: "Let’s Work Together"
 description: |
-  We are digital agency that helps businesses develop immersive and engaging user experiences
+  At Micrafil and Micrafil Water, we help businesses implement industrial and water filtration solutions along with digital experiences that improve processes, efficiency, and sustainable growth.
 
 button:
   enable: true
