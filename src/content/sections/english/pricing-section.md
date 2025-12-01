@@ -4,69 +4,46 @@ title: ""
 
 list:
   - enable: true
-    name: "Personal"
-    description: "We care about their success. For us real relationships feel real"
-    price:
-      prependValue: "$"
-      value: "180"
-      appendValue: "/mo"
+    name: "HOME"
+    description: "This is your category if you are looking for: the easiest and safest way to get pure water at home. Forget about bottled water."
     features:
-      - WEB & MOBILE
-      - FREE CUSTOM DOMAIN
-      - BEST HOSTING EVER
-      - OUTSTANDING SUPPORT
-      - WEB DESIGN
+      - "Fear of drinking tap water"
+      - "Cloudy ice or bad-tasting beverages"
+      - "High monthly expense on bottled water"
+      - "Chlorine taste in coffee and meals"
+      - "Lack of space to store water"
     button:
-      # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)
       enable: true
-      label: "CHOOSE THIS PLAN"
-      url: "/"
-      # hoverEffect: "" # Optional: text-flip | creative-fill | magnetic | magnetic-text-flip
-      # variant: "" # Optional: fill | outline | text | circle
-      # rel: "" # Optional
-      # target: "" # Optional
+      label: "Consult Solution"
+      url: "https://wa.me/5214423560603?text=Hello%2C%20I'm%20interested%20in%20learning%20more%20about%20home%20solutions"
+
   - enable: true
-    name: "Startup"
-    description: "We care about their success. For us real relationships feel real"
-    price:
-      prependValue: "$"
-      value: "180"
-      appendValue: "/mo"
+    name: "COMMERCIAL"
+    description: "This is your option if you are looking for modular solutions for restaurants, boutique hotels, or gyms that depend on water quality."
     features:
-      - WEB & MOBILE
-      - FREE CUSTOM DOMAIN
-      - BEST HOSTING EVER
-      - OUTSTANDING SUPPORT
-      - WEB DESIGN
+      - "Machinery and pipes damaged by corrosion or scale"
+      - "Frequent failures in coffee makers or steamers"
+      - "Quality or consistency problems in the final product"
+      - "Pipes and boilers with scale buildup"
+      - "Customers who doubt water quality"
     button:
-      # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)
       enable: true
-      label: "CHOOSE THIS PLAN"
-      url: "/"
-      # hoverEffect: "" # Optional: text-flip | creative-fill | magnetic | magnetic-text-flip
-      # variant: "" # Optional: fill | outline | text | circle
-      # rel: "" # Optional
-      # target: "" # Optional
+      label: "Request Evaluation"
+      url: "https://wa.me/5214423560603?text=Hello%2C%20I'm%20interested%20in%20learning%20more%20about%20commercial%20solutions"
+      variant: "outline"
+
   - enable: true
-    name: "Corporate"
-    description: "We care about their success. For us real relationships feel real"
-    price:
-      prependValue: "$"
-      value: "180"
-      appendValue: "/mo"
+    name: "INDUSTRIAL"
+    description: "This is your option if you are looking for the design and installation of custom projects and solutions that meet high capacity and purity standards."
     features:
-      - WEB & MOBILE
-      - FREE CUSTOM DOMAIN
-      - BEST HOSTING EVER
-      - OUTSTANDING SUPPORT
-      - WEB DESIGN
+      - "Requirement of critical and consistent purity (e.g., Labs)"
+      - "Worry about viruses and bacteria"
+      - "High maintenance and repair costs"
+      - "Need for centralized treatment infrastructure"
+      - "High operational costs due to inefficient filters"
     button:
-      # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)
       enable: true
-      label: "CHOOSE THIS PLAN"
-      url: "/"
-      # hoverEffect: "" # Optional: text-flip | creative-fill | magnetic | magnetic-text-flip
-      # variant: "" # Optional: fill | outline | text | circle
-      # rel: "" # Optional
-      # target: "" # Optional
+      label: "Quote Project"
+      url: "https://wa.me/5214423560603?text=Hello%2C%20I'm%20interested%20in%20learning%20more%20about%20industrial%20solutions"
+      variant: "outline"
 ---
