@@ -1,7 +1,8 @@
 ---
 enable: true # Control the visibility of this section across all pages where it is used
 title: "Have Any Project on Your Mind?"
-description: "Great! We're excited to hear from you and let's start something"
+description: |
+  At Micrafil Water, we design filtration solutions for every need, from pure water at home to specialized systems for commercial and industrial operations. Contact us to review your case and guide you toward the right solution.
 
 # image: "/images/about-us/about-one.jpg"
 # imagePosition: "left" # Choose between "left" or "right"

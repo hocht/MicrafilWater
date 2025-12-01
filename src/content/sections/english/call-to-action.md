@@ -3,7 +3,7 @@
 enable: true # Control the visibility of this section across all pages where it is used
 title: "Let’s Work Together"
 description: |
-  At Micrafil and Micrafil Water, we help businesses implement industrial and water filtration solutions along with digital experiences that improve processes, efficiency, and sustainable growth.
+  At Micrafil Water, we design filtration solutions for every need, from pure water at home to specialized systems for commercial and industrial operations. Contact us to review your case and guide you toward the right solution.
 
 button:
   enable: true

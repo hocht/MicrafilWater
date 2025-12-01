@@ -3,7 +3,7 @@
 enable: true # Control the visibility of this section across all pages where it is used
 title: "Trabajemos juntos"
 description: |
-  En Micrafil y Micrafil Water ayudamos a empresas a desarrollar soluciones de filtración y experiencias digitales que impulsan procesos, eficiencia y crecimiento real.
+  En Micrafil Water diseñamos soluciones de filtración para cualquier necesidad: desde agua pura en el hogar hasta sistemas especializados para comercios e industria. Contáctanos para evaluar tu caso y orientarte hacia la mejor solución.
 
 button:
   enable: true
