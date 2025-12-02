@@ -9,14 +9,14 @@
   },
   "headerOffcanvas": {
     "description": "Industrial Filtration for Safe Water in Your Home and Business",
-    "buttonLabel": "Let's Talk With Us"
+    "buttonLabel": "Let's Talk"
   },
   "navigation": {
     "buttonLabel": "Contact Us"
   },
   "helperButtons": {
     "whatsapp": "WhatsApp",
-    "call": "Call Us"
+    "call": "Call Me"
   },
   "footer": {
     "copyright": "© {{ year }} Micrafil / Micrafil Water / Designed and developed with [Astro](https://astro.build)",

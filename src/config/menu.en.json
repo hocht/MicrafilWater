@@ -7,17 +7,17 @@
     },
     {
       "enable": true,
-      "name": "Advantages",
-      "url": "/en/services/"
+      "name": "Benefits",
+      "url": "/#services"
     },
     {
       "enable": true,
-      "name": "Projects",
+      "name": "REVERSE OSMOSIS",
       "url": "/#projects"
     },
     {
       "enable": true,
-      "name": "Pricing",
+      "name": "GET A QUOTE",
       "url": "/#pricing"
     }
   ]
