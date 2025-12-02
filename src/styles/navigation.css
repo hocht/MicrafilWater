@@ -126,7 +126,7 @@
 
     .nav-link,
     .nav-dropdown-link {
-      @apply hover:!text-accent !px-0 text-white;
+      @apply hover:!text-[#0096D6] !px-0 text-[#183D6E];
     }
 
     .nav-item.open,

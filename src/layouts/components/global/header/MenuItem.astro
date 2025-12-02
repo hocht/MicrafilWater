@@ -4,6 +4,7 @@ import { getLocaleUrlCTM } from "@/lib/utils/i18nUtils";
 
 const menu = Astro.props.menu as NavigationLink;
 const { pathname } = Astro.url;
+const { isMobile } = Astro.props;
 ---
 
 {
@@ -26,6 +27,7 @@ const { pathname } = Astro.url;
           menu.url || Astro.url.origin,
           Astro.currentLocale,
         )}
+        {...(isMobile && { "data-hs-overlay": "#offcanvas-main" })}
         class:list={[
           "nav-link",
           {

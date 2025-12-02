@@ -26,18 +26,18 @@ if (!enable) {
 ---
 
 <div
-  class="text-light h-screen space-y-10 overflow-auto px-8 pt-20 pb-5 md:px-16 md:pt-32 md:pb-10" style="background-color: #104070;">
+  class="text-[#183D6E] h-screen space-y-10 overflow-auto px-8 pt-20 pb-5 md:px-16 md:pt-32 md:pb-10 bg-white">
   <button
     type="button"
     data-hs-overlay={`#${offcanvas}`}
     title="Close offcanvas"
-    class="border-border-light text-light hover:border-border-dark absolute end-7 top-5 z-20 inline-flex h-14 w-14 items-center justify-center gap-x-2 rounded-full border-2 text-sm font-medium transition-all duration-500 ease-out hover:rotate-90 hover:bg-white/25" style="background-color: #104070;"
+    class="border-[#183D6E] text-[#183D6E] hover:border-[#183D6E] absolute end-7 top-5 z-20 inline-flex h-14 w-14 items-center justify-center gap-x-2 rounded-full border-2 text-sm font-medium transition-all duration-500 ease-out hover:rotate-90 hover:bg-[#183D6E]/10 bg-white"
     aria-expanded="true">
     <ReactIcons icon="IoMdClose" class="text-2xl" />
   </button>
 
-  <Logo class="justify-start" width="11.25rem" height="3.125rem" src={logo} />
-  <div class="lg:border-b lg:pb-10">
+  <Logo class="justify-start" width="45rem" height="12.5rem" src="/images/Micrafil Water logo.svg" />
+  <div class="lg:border-b lg:pb-10 border-[#183D6E]">
     {
       (description || t("headerOffcanvas.description")) && (
         <p
@@ -49,20 +49,22 @@ if (!enable) {
       )
     }
   </div>
-  <div class="border-y py-10 lg:hidden">
+  <div class="border-y border-[#183D6E] py-10 lg:hidden">
     <Navbar isMobile={true} />
   </div>
 
   <div
-    class="prose-a:hover:text-accent prose-a:text-light font-secondary text-sm/loose uppercase">
-    {address && <address class="not-italic" set:html={markdownify(address)} />}
-    {phone && <p class="mt-4 md:mt-6" set:html={markdownify(phone)} />}
-    {email && <p set:html={markdownify(email)} />}
+    class="prose-a:hover:text-[#0096D6] prose-a:text-[#183D6E] font-secondary text-sm/loose uppercase">
+    {address && <address class="not-italic text-[#183D6E]" set:html={markdownify(address)} />}
+    {phone && <p class="mt-4 md:mt-6 text-[#183D6E]" set:html={markdownify(phone)} />}
+    {email && <p class="text-[#183D6E]" set:html={markdownify(email)} />}
   </div>
 
   <Social
     linkType="follow"
     size="md"
+    layout="dark"
+    class="text-[#183D6E]"
     list={social.main.filter((social) => social.enable)}
   />
 
