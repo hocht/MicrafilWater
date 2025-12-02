@@ -54,6 +54,12 @@ if (Array.isArray(information)) {
 <section class="overflow-hidden pt-16 md:pt-32">
   <div class="container">
     <div class="mx-auto w-full max-w-6xl space-y-10 md:space-y-20">
+      {/* Title Section */}
+      <div class="text-center">
+        {title && <h1 class="md:text-display-3 text-4xl font-bold mb-6" set:html={title} />}
+      </div>
+      
+      {/* Image Gallery */}
       {
         Array.isArray(images) && images.length > 1 && (
           <div
@@ -78,7 +84,7 @@ if (Array.isArray(information)) {
               <ReactIcons icon="FaArrowLeftLong" />
             </button>
 
-            {/* <!-- Right Arrow --> */}
+            {/* <!-- Right Arrow */}
             <button
               class="portfolio-slider-btn-next hover:bg-accent hover:text-dark absolute end-4 top-1/2 z-10 flex min-h-14 min-w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white transition duration-300 [--swiper-navigation-size:1.25rem]"
               aria-label="Next slide">
@@ -111,8 +117,6 @@ if (Array.isArray(information)) {
           )
         }
         <div class="space-y-10 pe-10 xl:col-span-5">
-          {title && <h1 class="md:text-display-5" set:html={title} />}
-
           {
             Content && (
               <div class="prose-styles has-video-modal [&_.image-list-component]:xl:-ms-31.5 [&_.image-list-component]:xl:w-6xl">

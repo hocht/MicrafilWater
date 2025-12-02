@@ -45,12 +45,22 @@ const isDarkAppearance = options?.appearance === "dark";
         isDarkAppearance ? "text-white" : "text-text-default",
       ]}
       {...rest}>
+      {title && (
+        <h3 class="text-h3-sm md:text-h3 order-1 leading-snug text-inherit">
+          <a
+            href={slug}
+            title={toSentenceCase(t("common.learnMoreAbout") + " " + title)}>
+            {title}
+          </a>
+        </h3>
+      )}
+
       {image && (
         <a
           title={toSentenceCase(t("common.learnMoreAbout") + " " + title)}
           class:list={[
-            "order-1 inline-block w-full overflow-hidden",
-            layout === "grid" && "mb-8",
+            "order-2 inline-block w-full overflow-hidden mt-4",
+            layout === "grid" && "mb-4",
           ]}
           href={slug}
           {...{
@@ -64,39 +74,30 @@ const isDarkAppearance = options?.appearance === "dark";
             src={image}
             alt={title || "Project image"}
             class:list={[
-              "h-100 scale-110 object-cover transition duration-500 group-hover:translate-x-2",
+              "h-100 w-full object-cover transition duration-500 group-hover:translate-x-2",
             ]}
           />
         </a>
       )}
 
+      {description && <div class="order-3 mt-2" set:html={markdownify(description)} />}
+      
       {hasCategories && (
-        <ul
-          class:list={[
-            "flex flex-wrap items-center gap-x-2 gap-y-1 opacity-80",
-            layout === "grid" && "order-3 mt-3",
-            isDarkAppearance ? "text-light" : "text-inherit",
-          ]}>
-          {categories.map((category: string, index: number) => (
-            <>
-              {index > 0 && <li>/</li>}
-              <li set:html={markdownify(category)} />
-            </>
-          ))}
-        </ul>
+        <div class="order-4 mt-4">
+          <ul
+            class:list={[
+              "flex flex-wrap items-center gap-x-2 gap-y-1 opacity-80",
+              isDarkAppearance ? "text-light" : "text-inherit",
+            ]}>
+            {categories.map((category: string, index: number) => (
+              <>
+                {index > 0 && <li>/</li>}
+                <li set:html={markdownify(category)} />
+              </>
+            ))}
+          </ul>
+        </div>
       )}
-
-      {title && (
-        <h3 class="text-h3-sm md:text-h3 order-2 leading-snug text-inherit">
-          <a
-            href={slug}
-            title={toSentenceCase(t("common.learnMoreAbout") + " " + title)}>
-            {title}
-          </a>
-        </h3>
-      )}
-
-      {description && <p class="mt-4" set:html={markdownify(description)} />}
     </div>
   ) : layout === "slider" ? (
     <div class="py-8 text-center text-sm text-gray-400 italic">
