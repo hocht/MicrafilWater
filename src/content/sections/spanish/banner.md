@@ -5,7 +5,7 @@ enable: true # Control the visibility of this section across all pages where it 
 titleSize: "display-2" # If your title text is larger, use a smaller text size like "display-3", "display-2", or "display-1".
 title: "Filtración Profesional para tu Hogar"
 
-image: "/images/banner/startup.png"
+image: "/images/banner/BannerMicrafilWater.png"
 description: "La experiencia de Micrafil en filtración industrial, aplicada a la seguridad y pureza del agua que tú y tu familia consumen, con tecnología construida a lo largo de más de 20 años de trabajo especializado.  
 
 <span style='display: block; margin-top: 1rem; font-size: 0.9rem; color: #cbae56;'>By <a href='https://www.micrafil.com' target='_blank' style='color: #cbae56; text-decoration: none;'>Micrafil</a></span>"

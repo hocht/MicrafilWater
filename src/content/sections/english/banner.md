@@ -5,7 +5,7 @@ enable: true # Control the visibility of this section across all pages where it 
 titleSize: "display-2" # If your title text is larger, use a smaller text size like "display-3", "display-2", or "display-1".
 title: "High-Standard Water Filtration for Every Home"
 
-image: "/images/banner/startup.png"
+image: "/images/banner/BannerMicrafilWater.png"
 description: "Micrafil’s industrial filtration expertise applied to the safety and purity of the water you and your family consume, with technology built over more than 20 years of specialized work."
 
 button:
