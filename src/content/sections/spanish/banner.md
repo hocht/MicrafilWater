@@ -6,7 +6,9 @@ titleSize: "display-2" # If your title text is larger, use a smaller text size l
 title: "Filtración Profesional para tu Hogar"
 
 image: "/images/banner/startup.png"
-description: "La experiencia de Micrafil en filtración industrial, aplicada a la seguridad y pureza del agua que tú y tu familia consumen, con tecnología construida a lo largo de más de 20 años de trabajo especializado."
+description: "La experiencia de Micrafil en filtración industrial, aplicada a la seguridad y pureza del agua que tú y tu familia consumen, con tecnología construida a lo largo de más de 20 años de trabajo especializado.  
+
+<span style='display: block; margin-top: 1rem; font-size: 0.9rem; color: #cbae56;'>By <a href='https://www.micrafil.com' target='_blank' style='color: #cbae56; text-decoration: none;'>Micrafil</a></span>"
 
 button:
   # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)

@@ -8,7 +8,7 @@
     "paginationPortfolioNext": "Next Portfolio"
   },
   "headerOffcanvas": {
-    "description": "Filtración Industrial Aplicada al Agua Segura de tu Hogar y Negocio",
+    "description": "Filtración Industrial Aplicada al Agua Segura de tu Hogar y Negocio<br><span style='display: block; margin-top: 0.5rem; font-size: 0.9rem; color: #cbae56;'>By <a href='https://www.micrafil.com' target='_blank' style='color: #cbae56; text-decoration: none;'>Micrafil</a></span>",
     "buttonLabel": "Hablemos"
   },
   "navigation": {
