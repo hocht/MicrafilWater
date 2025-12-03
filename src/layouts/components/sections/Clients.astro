@@ -57,6 +57,8 @@ if (!enable) {
         isDarkAppearance && "outline-white",
         columnsPerRow === 6
           ? "w-full md:grid-cols-3 lg:grid-cols-6"
+          : columnsPerRow === 3
+          ? "mx-auto max-w-3xl md:grid-cols-2 lg:grid-cols-3"
           : "mx-auto max-w-4xl lg:grid-cols-4",
       ]}>
       {

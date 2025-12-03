@@ -15,12 +15,8 @@ list:
     src: "/images/clients/5.svg"
   - alt: "example alt text"
     src: "/images/clients/6.svg"
-  - alt: "example alt text"
-    src: "/images/clients/1.svg"
-  - alt: "example alt text"
-    src: "/images/clients/2.svg"
 
 options:
   appearance: "light" # light / dark
-  columnsPerRow: 4 # 4 / 6 (default - 4)
+  columnsPerRow: 3 # 4 / 6 (default - 4)
 ---
