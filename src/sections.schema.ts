@@ -160,7 +160,7 @@ export const clientsSectionSchema = z
     options: z
       .object({
         appearance: AppearanceEnum.optional(),
-        columnsPerRow: z.union([z.literal(4), z.literal(6)]).optional(), // Default is 4
+        columnsPerRow: z.union([z.literal(3), z.literal(4), z.literal(6)]).optional(), // Default is 4
       })
       .partial()
       .optional(),
